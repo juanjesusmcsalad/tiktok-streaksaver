@@ -53,7 +53,7 @@
 
 ## Quick Start (No Python Required)
 
-1. Download the latest **`TikTokStreakSaver-v1.0.0.zip`** from [**Releases**](https://github.com).
+1. Download the latest **`TikTokStreakSaver-v1.0.0.zip`** from [**Releases**](https://github.com/juanjesusmcsalad/tiktok-streaksaver/releases/tag/1.0.0).
 2. Extract the folder anywhere on your PC (e.g., in your Downloads or Documents folder).
 3. Double-click **`TikTokStreakConfig.exe`**:
    - Because you aren't logged in yet, it will open to the **Account & Login** tab.
