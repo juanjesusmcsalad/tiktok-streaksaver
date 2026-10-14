@@ -1,0 +1,20 @@
+{
+  "friends": [
+    {
+      "username": "friend_username",
+      "custom_message": "Custom streak message 🔥"
+    }
+  ],
+  "default_messages": [
+    "🔥",
+    "Streak! 🔥",
+    "gm! Streak 🔥",
+    "Daily streak 🔥",
+    "🔥 keep it going!",
+    "Streak time 🔥"
+  ],
+  "cooldown_hours": 18,
+  "delay_between_chats_min": 6,
+  "delay_between_chats_max": 14,
+  "headless": true
+}
