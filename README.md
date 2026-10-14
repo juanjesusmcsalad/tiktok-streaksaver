@@ -5,15 +5,15 @@
 </p>
 
 <p align="center">
-  <strong>An automated, anti-detection TikTok streak keeper with a dedicated configuration GUI.</strong><br>
-  Keep your daily streaks alive without running 24/7 background bloatware or risking account bans.
+  <strong>An automated TikTok streak keeper with stealth browser emulation and a dedicated configuration GUI.</strong><br>
+  Keep your daily streaks alive without running 24/7 background bloatware, using human-like delays to minimize detection risk.
 </p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.10+-3776AB?style=flat&logo=python&logoColor=white" alt="Python 3.10+" />
   <img src="https://img.shields.io/badge/Playwright-Automated_Browser-45ba4b?style=flat&logo=playwright&logoColor=white" alt="Playwright" />
   <img src="https://img.shields.io/badge/Platform-Windows_10%20%7C%2011-0078D6?style=flat&logo=windows&logoColor=white" alt="Windows" />
-  <img src="https://img.shields.io/badge/Anti--Detection-Stealth_Evasions-8B5CF6?style=flat" alt="Anti-Detection" />
+  <img src="https://img.shields.io/badge/Evasions-Stealth_Emulation-8B5CF6?style=flat" alt="Stealth Emulation" />
   <img src="https://img.shields.io/badge/License-MIT-green?style=flat" alt="MIT License" />
 </p>
 
@@ -30,7 +30,7 @@
   - **Zero Idle Memory**: Unlike traditional bots that stay running in the background all day, this program wakes up, sends streaks, and **closes immediately** (0 MB RAM between runs).
   - **PC Startup Option**: Automatically runs once when your PC turns on (`shell:startup`) and closes.
   - **Task Scheduler Integration**: Configure recurring runs (e.g. every 18 hours). Inspects native Windows task XML directly with sub-millisecond execution time.
-- **Anti-Ban & Stealth**:
+- **Stealth & Rate-Limit Protection**:
   - **No Plaintext Passwords**: No typing credentials into forms; no slide puzzle captchas.
   - **Human Keystroke Simulation**: Character-by-character typing with natural jitter (45ms–120ms delays) and human inter-chat pauses (6s–14s).
   - **ByteDance Frontier IM Integration**: Built specifically for TikTok Web's internal messaging protocol with multi-tier locator fallbacks.
@@ -38,16 +38,16 @@
 
 ---
 
-## Comparison with Legacy Scripts
+## Comparison with Traditional Scripts
 
-| Feature | Legacy Scripts (e.g. `huuthang201`) | **TikTok Auto Streak Saver** |
+| Feature | Traditional Automation Scripts | **TikTok Auto Streak Saver** |
 |---|---|---|
-| **Authentication** | Types username & password into Selenium (triggers captchas & lockouts) | **Interactive QR Code / Session Token** (`session.json`) — 100% captcha-free |
+| **Authentication** | Types username & password into web forms (triggers captchas & lockouts) | **Interactive QR Code / Session Token** (`session.json`) — captcha-free login |
 | **Bot Detection** | Flags `navigator.webdriver` immediately | **Playwright Stealth**: Mocks Chrome runtime, plugins, languages, and canvas |
-| **Typing Behavior** | Pastes text instantly at 0ms (flags bot rate-limits) | **Human Keystroke Jitter** (45ms–120ms) with realistic random pauses |
+| **Typing Behavior** | Pastes text instantly at 0ms (flags rate limits) | **Human Keystroke Jitter** (45ms–120ms) with realistic random pauses |
 | **Idle Footprint** | Stays running in memory 24/7 consuming CPU & RAM | **0 MB Background Footprint**: Runs and immediately terminates |
 | **User Interface** | Terminal only / brittle manual edits | **Dedicated Desktop GUI** + CLI flexibility |
-| **Cooldown Safety** | Re-sends repeatedly, looking like a spam bot | **Persistent History Tracker** (`history.json`) with customizable cooldown |
+| **Cooldown Safety** | Re-sends repeatedly without send tracking | **Persistent History Tracker** (`history.json`) with customizable cooldown |
 
 ---
 
@@ -171,7 +171,9 @@ This produces:
 
 ## Disclaimer
 
-This project is for educational and personal automation purposes only. TikTok is a registered trademark of ByteDance Ltd. This repository is not affiliated with, authorized, maintained, sponsored, or endorsed by TikTok or ByteDance. Use responsibly and adhere to TikTok's Terms of Service.
+This project is for educational and personal automation purposes only. While this tool uses stealth evasions, randomized typing delays, and cooldown limits to emulate human behavior, **no automation is completely risk-free**. Automating actions on third-party platforms always carries inherent risk under TikTok's Terms of Service. Use responsibly and at your own discretion. 
+
+TikTok is a registered trademark of ByteDance Ltd. This repository is not affiliated with, authorized, maintained, sponsored, or endorsed by TikTok or ByteDance.
 
 ---
 
